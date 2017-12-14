@@ -52,45 +52,16 @@ for($i=0;$i<count($array);$i++){
 /*
 $a=array(-10,0,2,9,-5);
 for ($z=0;count($a)>$z;$z=0){   //Meginau naudoti while(count($a)>0) bet rodydavo "bad gateway". su for veikia gerai.
-    $x=$a[0];
-    $nr=0;
+    $x=0;
     for ($i=1;$i<count($a);$i++){
-        if($a[$i]>$x){
-            $nr=$i;
-            $x=$a[$i];
+        if($a[$i]>$a[$x]){
+            $x=$i;
         }
     }
-    echo $x." ";
-    array_splice($a,$nr,1);
+    echo $a[$x]." ";
+    array_splice($a,$x,1);
 }
 */
-
-//Trikampiai-nepavykes darbas
-/*
-$array=[[3,4,5],[2,10,8],[5,6,5],[5,5,5]];
-for($i=0;$i<count($array);$i++) {
-    if ($array[$i][0]==$array[$i][1] && $array[$i][0]==$array[$i][2]){
-        $x=($array[$i][0]**2*sqrt(3))/4;
-        var_dump($array[$i]);
-        echo " Lygiakrastis trikampis. Plotas:".round($x,2)."<br>";
-    }
-    elseif ($array[$i][0]==$array[$i][1] xor $array[$i][0]==$array[$i][2] xor $array[$i][1]==$array[$i][2]){
-        var_dump($array[$i]);
-        echo " Lygiasonis trikampis<br>";
-    }
-    elseif ($array[$i][0]**2==$array[$i][1]**2+$array[$i][2]**2xor
-        $array[$i][1]**2==$array[$i][0]**2+$array[$i][2]**2xor
-        $array[$i][2]**2==$array[$i][1]**2+$array[$i][0]**2){
-        var_dump($array[$i]);
-        echo " Ivairiakrastis trikampis<br>";
-    }
-    else{
-        var_dump($array[$i]);
-        echo " Negali buti trikampio krastiniu ilgiai<br>";
-    }
-}
-*/
-
 ?>
 </body>
 </html>
