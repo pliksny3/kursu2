@@ -39,7 +39,7 @@ for($x=1;$x<=1000;$x++){
 */
 
 //Tobuli skaiciai su funkcijomis
-
+/*
 function tobulas(array $array,$nr){
     $sum=0;
     for($i=0;$i<count($array);$i++){
@@ -61,7 +61,7 @@ function dalikliai(){
     }
 }
 dalikliai();
-
+*/
 ?>
 </body>
 </html>
