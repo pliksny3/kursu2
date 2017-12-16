@@ -38,6 +38,33 @@ for($x=1;$x<=1000;$x++){
     }
 }
 */
+
+//Tobuli skaiciai su funkcijomis
+/*
+function tobulas(array $array,$nr){
+    $sum=0;
+    for($i=0;$i<count($array);$i++){
+        $sum+=$array[$i];
+    }
+    return $sum==$nr;
+
+}
+function dalikliai(){
+    $arr=[];
+    for($i=1;$i<=1000;$i++){
+        for($x=1;$x<=$i/2;$x++){
+            if($i%$x==0){
+                array_push($arr,$x);
+            }
+        }
+        if(tobulas($arr,$i)){
+            echo $i.'<br>';
+        }
+        $arr=[];
+    }
+}
+echo dalikliai();
+*/
 ?>
 </body>
 </html>
