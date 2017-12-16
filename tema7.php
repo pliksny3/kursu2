@@ -39,13 +39,13 @@ for($x=1;$x<=1000;$x++){
 */
 
 //Tobuli skaiciai su funkcijomis
-/*
+
 function tobulas(array $array,$nr){
     $sum=0;
     for($i=0;$i<count($array);$i++){
         $sum+=$array[$i];
     }
-    return $sum==$nr;
+    if($sum==$nr) echo $nr.'<br>';
 
 }
 function dalikliai(){
@@ -56,14 +56,12 @@ function dalikliai(){
                 array_push($arr,$x);
             }
         }
-        if(tobulas($arr,$i)){
-            echo $i.'<br>';
-        }
+        tobulas($arr,$i);
         $arr=[];
     }
 }
-echo dalikliai();
-*/
+dalikliai();
+
 ?>
 </body>
 </html>
