@@ -32,7 +32,6 @@ for($x=1;$x<=1000;$x++){
             $sum+=$y;
         }
     }
-    //echo $x.'+'.$sum.'<br>';
     if($sum==$x){
         echo $x.'<br>';
     }
