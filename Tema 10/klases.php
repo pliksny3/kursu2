@@ -24,16 +24,12 @@ class Trimestras extends Mokinys{
         parent::__construct($vardas, $pavarde);
         $this->trimestras=$trimestras;
     }
-    function duomenys(){
+    public function vid(){
         $vid=array_sum($this->trimestras)/count($this->trimestras);
-        return '<tr><td>'.$this->vardas.'</td><td>'.$this->pavarde.'</td><td>'.round($vid,2).'</td></tr>';
+        return round($vid, 2);
     }
 }
 
-$mokinys1= new Trimestras('Jonas','Jonaitis', ['lietuviu'=>8, 'matematika'=>9, 'anglu'=>8]);
-$mokinys2= new Trimestras('Asta','Astaite', ['lietuviu'=>5, 'matematika'=>10, 'anglu'=>8]);
-$mokinys3= new Trimestras('Domas','Domaitis', ['lietuviu'=>4, 'matematika'=>8, 'anglu'=>7]);
-$mokinys4= new Trimestras('Jurga','Jurgaite', ['lietuviu'=>3, 'matematika'=>2, 'anglu'=>10]);
 //===============================================
 
 

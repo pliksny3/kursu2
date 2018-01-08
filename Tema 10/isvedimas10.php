@@ -25,7 +25,10 @@
     </thead>
     <tbody>
         <?php
-            include ('klases.php'); include ('funkcijos10.php'); include ('masyvai10.php');
+            include ('klases.php'); include ('funkcijos10.php');include ('masyvai10.php');
+            usort($objektaiMokiniai,function ($a, $b){
+                return ($a -> vid() < $b -> vid());
+            });
             mokinys($objektaiMokiniai);
         ?>
     </tbody>
