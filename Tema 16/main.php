@@ -55,16 +55,7 @@ if (empty($_REQUEST['id'])) {
 }
 
 
-return table($conn);
-
-
-//$sql = "UPDATE radars SET distance = ?, time = ? WHERE id = ?";
-//$stmt = $conn->prepare($sql);
-//
-//$stmt->bind_param("ddi", $kelias, $laikas, $id);
-//
-//$stmt->execute();
-
+table($conn);
 
 $conn->close();
 ?>
