@@ -44,14 +44,24 @@ require_once 'functions.php';
 $conn = conn();
 
 if(!$_POST){exit();}
-if (empty($_REQUEST['id'])) {
+if (!empty($_REQUEST['date']) && !empty($_REQUEST['number']) && !empty($_REQUEST['distance']) && !empty($_REQUEST['time'])
+    && empty($_REQUEST['id'])) {
     $sql = $conn->prepare("INSERT INTO radars (date, number, distance, time) VALUE (?, ?, ?, ?)");
     $sql->bind_param("ssdd", $_REQUEST['date'], $_REQUEST['number'], $_REQUEST['distance'], $_REQUEST['time']);
     $sql->execute();
-} else {
+}elseif (empty($_REQUEST['date']) && empty($_REQUEST['number']) && empty($_REQUEST['distance']) && empty($_REQUEST['time'])
+    && !empty($_REQUEST['id'])){
+    $sql = $conn->prepare("DELETE FROM radars WHERE id = ?");
+    $sql->bind_param("i", $_REQUEST['id']);
+    $sql->execute();
+} elseif (!empty($_REQUEST['date']) && !empty($_REQUEST['number']) && !empty($_REQUEST['distance']) && !empty($_REQUEST['time'])
+    && !empty($_REQUEST['id'])) {
     $sql = $conn->prepare("UPDATE radars SET date = ?, number = ?, distance = ?, time = ? WHERE id = ?");
     $sql->bind_param("ssddi", $_REQUEST['date'], $_REQUEST['number'], $_REQUEST['distance'], $_REQUEST['time'], $_REQUEST['id']);
     $sql->execute();
+}elseif(empty($_REQUEST['date']) && empty($_REQUEST['number']) && empty($_REQUEST['distance']) && empty($_REQUEST['time'])
+    && empty($_REQUEST['id'])){
+
 }
 
 
