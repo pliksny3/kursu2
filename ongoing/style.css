@@ -1,0 +1,142 @@
+body{
+    margin: 0 0 20px 0;
+    background-image: url("pic.jpg");
+    width: 100%;
+}
+.body{padding-bottom: 10px}
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    opacity: 0.2;
+    background-image: url("2.jpg");
+}
+.radars, .drivers, .links, .dropdown, .pagi2 {
+    float:left;
+    text-align: center;
+    margin: 10px;
+
+}
+.wrapper:hover{
+    opacity: 1;
+}
+h3{
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+input, select{
+    border: 2px solid rgb(0,0,0);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
+}
+input[placeholder]{
+    color: black;
+    font-weight: bolder;
+}
+table, td, th{
+    border: none;
+    border-collapse: collapse;
+    margin: 10px auto 10px auto;
+    text-align: center;
+}
+.p2{max-width: 60px}
+.main2tb{
+    width: 100%;
+}
+td {
+    padding: 10px;
+    font-size: 20px;
+    font-family: Times;
+    font-weight: bold;
+    text-align: center;
+}
+th{
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(33, 37, 41);
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+.even {
+    background-color:rgb(242, 242, 242);
+}
+.odd {
+    background-color:rgb(255, 255, 255);
+}
+.links a, .tb-btn a, #both{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: green;
+}
+.links a, #both {
+    float: left;
+    min-width: 70px;
+    margin: 4px 0;
+}
+.tb-btn{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+#c{background-color: rgb(243, 156, 18)}
+#m{background-color: rgb(33, 136, 56)}
+#y{background-color: rgb(231, 76, 60)}
+#h{background-color: rgb(255, 255, 255); margin-top: 20px}
+#both{background-color: rgb(0, 0, 0)}
+
+.stop{
+    opacity: .1;
+}
+.stop:hover{
+    cursor: default;
+}
+.fa-trash{
+    color: rgb(114, 123, 132)
+}
+.fa-pencil{
+    color: rgb(0, 105, 217)
+}
+.fa-home{
+    color: rgb(0, 0, 0);
+}
+.fa-car, .fa-user-plus{
+    color: rgb(255, 255, 255);
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+button:hover{cursor: pointer}
+.body{overflow: hidden}
+.tb_r{width: 65%;}
+.tb_d{width: 25%;}
+.tb_d, .tb_r{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#saver{float: right}
+#saved{float: left}
+#saved, #saver, #saveid, #savel{background-color: white}
+
+.resets{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+
+
+
